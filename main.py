@@ -1,8 +1,7 @@
 import bank
 
-
 def main():
-    acc_name = bank.BankAccount(input("What is your account name? > ")) # we are assigning acc_name to the class then setting the class attribute
+    acc_name = bank.BankAccount(input("What is your account name? > "))
     while True:
         try:
             match input(f"Choose an option for {acc_name.account_holder}\n[1] Withdraw\n[2] Deposit\n[3] Check balance\n >>> "):
